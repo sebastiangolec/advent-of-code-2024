@@ -14,7 +14,7 @@ public class FirstPuzzle {
     public static final int RIGHT_COLUMN = 1;
 
     public static void main(String[] args) throws IOException {
-        File inputFile = new File("src/main/resources/day1/input.txt");
+        File inputFile = new File("src/main/resources/input/day1.txt");
         Path path = inputFile.toPath();
         String inputString = Files.readString(path, Charset.defaultCharset());
         int result = calculateTotalDistance(inputString);
