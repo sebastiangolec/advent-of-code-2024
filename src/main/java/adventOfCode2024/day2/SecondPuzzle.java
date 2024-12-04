@@ -37,11 +37,9 @@ public class SecondPuzzle {
                     validReportsWithOneError++;
                 }
             }
-            if (validReportsWithOneError >= 1) { // if there is at least one valid report after removing one value, then algorithm works
-                return true;
-            } else {
-                return false;
-            }
+
+            // if there is at least one valid report after removing one value from it, then algorithm works
+            return validReportsWithOneError >= 1;
         }
     }
 
