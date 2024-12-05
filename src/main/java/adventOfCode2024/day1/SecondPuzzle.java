@@ -14,7 +14,7 @@ public class SecondPuzzle {
     public static final int RIGHT_COLUMN = 1;
 
     public static void main(String[] args) throws IOException {
-        File inputFile = new File("src/main/resources/input/day1.txt");
+        File inputFile = new File("src/main/resources/input/day1");
         Path path = inputFile.toPath();
         String inputString = Files.readString(path, Charset.defaultCharset());
         BigDecimal result = calculateSimilarityScore(inputString);

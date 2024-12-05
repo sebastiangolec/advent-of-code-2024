@@ -11,7 +11,7 @@ import java.util.List;
 
 public class SecondPuzzle {
     public static void main(String[] args) throws IOException {
-        File inputFile = new File("src/main/resources/input/day2.txt");
+        File inputFile = new File("src/main/resources/input/day2");
         Path path = inputFile.toPath();
         String inputString = Files.readString(path, Charset.defaultCharset());
         long numberOfSafeReports = countSafeReports(inputString);
